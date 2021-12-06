@@ -1,0 +1,42 @@
+# calc mult & power of 
+
+mov a 2
+mov b 4
+jsr pow_ab
+mov a a   # 'print' a
+
+mov a 6
+mov b 6
+jsr mult_ab
+mov a a   # 'print' a
+
+jmp end
+
+# power of, uses a, b
+-> pow_ab:
+sub b 1   # because a already is 1*a
+pow_loop:
+# jsr mult_ab
+add a a
+sub b 1
+jmz pow_end
+jmp pow_loop
+pow_end:
+<- rts
+
+# mult a by b, uses a, b, y
+-> mult_ab:
+mov y b
+sub y 1     # because b is one too high
+mult_loop:
+add a b
+sub y 1
+jmz mult_end
+jmp mult_loop
+mult_end:
+<- rts
+
+# done
+end:
+
+

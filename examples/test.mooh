@@ -1,0 +1,15 @@
+# test <- on rts
+
+jsr srt01
+jsr srt02
+
+-> srt01:
+out "srt01"
+rts
+
+-> srt02:
+out "srt02"
+<- rts
+
+# done
+end:

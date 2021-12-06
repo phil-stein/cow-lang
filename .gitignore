@@ -1,0 +1,17 @@
+# build-folder
+**/bin
+**/debug
+**/release
+
+# vim-files
+*~
+*.un~
+*.swp
+*.swo
+
+# misc
+*.exe
+*.lib
+*.a
+*.rar
+*.zip

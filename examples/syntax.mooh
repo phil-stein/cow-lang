@@ -1,0 +1,30 @@
+# registerer a, b, x, y
+
+# rest just like simple assembly
+
+mov a 2
+mov b 1
+
+label:
+
+add a 1
+sub b a
+
+jmp label
+
+jsr subroutine
+
+
+# both of these work
+-> subroutine:
+sub x 2
+mov x a
+rts
+
+-> subroutine:
+sub x 2
+mov x a
+<- rts
+
+
+

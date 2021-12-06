@@ -1,0 +1,32 @@
+# mov a 'a' 
+ 
+# psh 3     # put 3 at end of mem
+# pop a     # pop last and put into a
+# put 5 3   # put 3 at address 3
+# get 5 a   # put value at address 5 into a
+
+psh 3     # arg for main:
+jsr main
+out 10
+out a
+
+-> main:
+pop x     # get arg
+loop:
+out "hi there"
+sub x 1
+jnz loop
+<- rts
+
+# more branching stuff
+# cmp a 0
+# jmc if_a_0
+# jeq a 0 if_a_0    # jump equal, a == b then jmp c 
+
+# like preprocessor vars, i.e. get VAR a
+# VAR: 5
+# -> VAR 5
+# idk
+
+# done
+end:

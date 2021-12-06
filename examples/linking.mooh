@@ -1,0 +1,22 @@
+# concept of the include syntaxt
+
+# if going with the c-style # preprocessors
+# i should use one syntax for all non code things
+# like includes and maybe ifdefs, macros, etc.
+
+[use: "file.mooh"]
+
+[file.mooh]
+
++ "file.mooh"
+
+- "file.mooh"
+
+-> "file.mooh"
+
+-use-> "file.mooh"
+
+-*file.mooh*
+
+
+@ "file.mooh"

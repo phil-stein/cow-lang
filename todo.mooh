@@ -1,0 +1,45 @@
+# ---- todo ----
+#
+# general:
+# -
+#
+# instructions:
+# jnz   ->   jump not zero, opposite of jmz
+# cmp   ->   compare registers and or numbers, sets flag
+# jmc   ->   jump if compare flag
+#
+# flags:
+# compare flag
+# @UNSURE: in subrt. flag 
+#
+# features:
+# warings
+# 1. in tonkenize_text()
+#   - symbol already exists
+#   - 
+# 2. in interpret_tokens()
+#   - illegal operation, i.e. add a (need second arg)
+#   - 
+#
+# strings
+# psh/put/pop/get with strings 
+#
+# out / in
+#   output to console
+#
+# 'makefile'
+# * specifies entry file
+# * specifies debug flags
+#     - i.e. warnings, tokens, labels, instructions, etc.
+#
+# 'compiling':
+# 1. make multiple .o files, tokens as binary file
+# 2. smush together
+#
+# nuklear app:
+# 1. view tokens
+# 2. see what code does
+# 3. pause / play
+# 4. performace timers, etc.
+#
+
