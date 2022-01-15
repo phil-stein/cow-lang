@@ -29,7 +29,7 @@ so this is very not good. <br>
 
 `.mooh` extension on files
 
-```
+```asm
 # comment
 
 mov a 3   # assign a 3, i.e. a = 3
